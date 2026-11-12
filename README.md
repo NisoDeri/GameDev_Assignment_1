@@ -23,3 +23,8 @@ Player and enemy move with Rigidbody2D in FixedUpdate
 
 
 Call flow: Coin → GameManager → CoinSpawner and Enemy → GameManager
+
+I added 3 extensions 
+Knight appears from level 3 with chess knight move in L shape.
+Added score tracking UI to the game
+Restart ability when game ends with R button.

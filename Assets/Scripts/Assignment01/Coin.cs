@@ -7,7 +7,8 @@ public class Coin : MonoBehaviour
     public int value;
     public GameManager gameManager;
 
-    // The player can overlap the coin for a few physics steps; make sure it only counts once.
+    // Destroy() only takes effect at the end of the frame, so a second trigger callback
+    // can still arrive in the same physics step. This guard makes the coin count only once.
     private bool collected;
 
     private void OnTriggerEnter2D(Collider2D other)
